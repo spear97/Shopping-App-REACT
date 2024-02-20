@@ -1,41 +1,51 @@
+/* CSS styles for the App component */
+
+/* Center align text */
 .App {
   text-align: center;
 }
 
+/* Logo styling */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* 40% of the viewport height */
+  pointer-events: none; /* Prevent pointer events on the logo */
 }
 
+/* Animation for logo spin */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Apply infinite spinning animation */
   }
 }
 
+/* Header styling */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+  background-color: #282c34; /* Set background color */
+  min-height: 100vh; /* Minimum height of the viewport */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items horizontally */
+  justify-content: center; /* Center align items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: black; /* Text color */
 }
 
+/* Styling for links */
 .App-link {
-  color: #61dafb;
-}
-.btn-success {
-    --bs-btn-bg: #badbcc!important;
+  color: #61dafb; /* Link color */
 }
 
+/* Custom button style */
+.btn-success {
+  --bs-btn-bg: #badbcc!important; /* Custom background color */
+}
+
+/* Animation keyframes for logo spin */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* End rotation at 360 degrees */
   }
 }
