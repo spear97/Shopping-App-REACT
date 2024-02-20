@@ -1,13 +1,15 @@
+// Import React and necessary styles
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+// Import context provider and components
 import { AppProvider } from './context/AppContext';
 import CartValue from './components/CartValue';
 import ExpenseList from './components/ExpenseList';
 import ItemSelected from './components/ItemSelected';
 import Location from './components/Location';
 
+// Main component representing the entire application
 const App = () => {
     return (
         <AppProvider>
@@ -37,4 +39,6 @@ const App = () => {
         </AppProvider>
     );
 };
+
+// Export the App component as the default export
 export default App;
